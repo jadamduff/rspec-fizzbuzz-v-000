@@ -2,11 +2,11 @@
 # See README.md for instructions on how to do this
 
 def fizzbuzz(num)
-  if ((num / 3).to_i.is_a? Integer)) && ((num / 5).to_i.is_a? Integer))
+  if (num % 3 == 0) && (num % 5 == 0)
     return "FizzBuzz"
-  elsif (num / 3).to_i.is_a? Integer
+  elsif (num % 3 == 0)
     return "Fizz"
-  elsif (num / 3).to_i.is_a? Integer
+  elsif (num % 5 == 0)
     return "Buzz"
   else
     return nil
